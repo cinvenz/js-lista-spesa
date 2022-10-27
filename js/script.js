@@ -20,9 +20,6 @@ eleGroceryForm.addEventListener('submit', function(event) {
 	}
 });
 
-// while (arrGroceryList != '') {
-// 	eleGroceryList.innerHTML += `<li>${arrGroceryList[i]}</li>`;
-// }
 
 
 
