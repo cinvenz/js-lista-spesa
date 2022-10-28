@@ -1,4 +1,10 @@
+
 const arrGroceryList = [];
+let i
+while (i != '' && arrGroceryList.length > 5){
+	eleGroceryList.innerHTML += `<li>${inputGroceryItem[i]}</li>`;
+	i++
+}
 
 
 const eleGroceryList = document.querySelector('.grocery-list');
@@ -8,7 +14,8 @@ const eleGroceryForm = document.querySelector('form');
 eleGroceryForm.addEventListener('submit', function(event) {
 	event.preventDefault();
 
-	while (inputGroceryItem.value != '') {
+
+	if (inputGroceryItem.value != '') {
 		
 		arrGroceryList.push(inputGroceryItem.value);
 
@@ -17,6 +24,7 @@ eleGroceryForm.addEventListener('submit', function(event) {
 
 		
 		inputGroceryItem.value = '';
+
 	}
 });
 
